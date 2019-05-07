@@ -9,14 +9,13 @@ import java.util.List;
 class BeautyArray {
 
     public static void main(String[] args) {
-        List<String> lookBeautiful = Arrays.asList("jakiz", "piekny", "dzis", "dzionek");
-        //List<String> lookBeautiful = List.of("jakiz", "piekny", "dzis", "dzionek");
+        List<String> lookBeautiful = Arrays.asList("jakiż", "piękny", "dziś", "dzionek");
 
         StringBuilder builder = new StringBuilder();
         for (String value : lookBeautiful) {
             builder.append(" ");
             builder.append(value);
         }
-        System.out.println(builder.toString());
+        System.out.println(builder.toString().trim());
     }
 }
